@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Record New Training Session</title>
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+	
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
+	<link href="training.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    
+	<link href="UserHome.css" rel="stylesheet" type="text/css">
+  
+  <script>
+	  $(document).ready(function() {
+		$('#pdate').datepicker({
+          dateFormat: "dd-mm-yy",
+          weekStart: 6,
+          daysOfWeekHighlighted: "6",
+          autoclose: true,
+          todayHighlight: true,
+          changeMonth: true,
+          changeYear: true          
+          });
+		  
+		  $('#gdate').datepicker({
+          dateFormat: "dd-mm-yy",
+          weekStart: 6,
+          daysOfWeekHighlighted: "6",
+          autoclose: true,
+          todayHighlight: true,
+          changeMonth: true,
+          changeYear: true          
+          });		  
+	  });
+  </script>
+  
+  
+</head>
+
+<body>
+	<header>
+	<nav class="navbar navbar-inverse" id="cssmenu">
+		<div id="head-mobile"></div>
+		<div class="button"></div>
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a href="index.html"><img src="a1.png" alt="GET-FIT LOGO"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right" style="display:block">
+				<li class="active"><a href="Userhome.html">Home</a></li>
+				<!-- <li><a href="#">TRAINING</a></li> -->
+				<li class="has-sub"><span class="submenu-button"></span><a href="#">TRAINING</a>
+				   <ul>
+					  <li><a href="TrainingRecord.html">RECORD NEW TRAINING</a></li>
+					  <li><a href="TrainingUpdate.html">UPDATE TRAINING</a></li>
+				   </ul>
+				</li>
+				<li class="has-sub"><span class="submenu-button"></span><a href="#">TRAINING HISTORY</a>
+				   <ul>
+					  <li><a href="viewTrainingHisstory(Trainer).html">TRAINER</a></li>
+					  <li><a href="viewTrainingHistory(User).html">USER</a></li>
+				   </ul>
+				</li>
+				<li><a href="reviewTrainer.html">TRAINER REVIEW</a></li>
+				<li><form class="form-inline" style="padding-top:10px;">
+				   <input class="form-control" type="text" placeholder="Search">
+				   <button class="btn btn-outline-success" type="submit">GO</button>
+				 </form>
+				</li>
+				<li>
+					<div style="padding:10px 10px;">
+						<a class="btn btn-primary" type="button" href="index.html">SIGN OUT</a>
+					</div>
+				</li>
+				  <li> <div style="padding:10px 10px;"><a class="btn btn-primary" type="button" onclick="SignUp.html" href="UserEdit.html">UPDATE</a> </div> </li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	</header>
+			</br>
+  <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="personal-training" checked><label for="tab-1" class="tab">Personal Training Session</label>
+		<input id="tab-2" type="radio" name="tab" class="group-training"><label for="tab-2" class="tab">Group Training Session</label>
+		<div class="login-form">
+			<div class="personal-training-htm">
+				<div class="group">
+					<label for="user" class="label">Title</label>
+					<input id="title" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Date</label>
+					<input id="pdate" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Time</label>
+					<input id="ptime" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Fee</label>
+					<input id="fee" type="number" class="input" >
+				</div>
+				<div class="group">
+					<label for="user" class="label">Notes</label>
+					<input id="notes" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Status</label>
+					 <SELECT id="status" class="form-control">
+                      <option>Available</option>
+                    </select>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Submit">
+				</div>				
+			</div>
+			<div class="group-training-htm">
+				<div class="group">
+					<label for="user" class="label">Title</label>
+					<input id="title" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Date</label>
+					<input id="gdate" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Time</label>
+					<input id="time" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">No of Perticipants</label>
+					<input id="perticipant" type="number" class="input">
+				</div>
+				<div class="group">
+					<label for="user" class="label">Course</label>
+					<SELECT id="course" class="form-control">
+                      <option>Sports</option>
+                    </select>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Status</label>
+					 <SELECT id="status" class="form-control">
+                      <option>Available</option>
+					  <option>Not Available</option>
+                    </select>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Submit">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  
+  
+</body>
+</html>
