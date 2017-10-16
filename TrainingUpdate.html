@@ -1,0 +1,232 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Update Training Session</title>
+	
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 	
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
+	<link href="training.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">    
+	<link href="UserHome.css" rel="stylesheet" type="text/css">
+	
+  
+  <script type="text/javascript">
+			
+			function createTable() 
+			{
+			var newTable;
+			var startTag;
+			var endTag;
+			var sessiondata,radiodata;
+			
+			//alert(sessiondata);			
+			
+			sessiondata = document.forms["myForm"]["psessionId"].value;
+			sessiondata2 = document.forms["myForm"]["gsessionId"].value;
+			radiodata = document.forms["myForm"]["tab"].value;
+			
+			startTag="None"
+			
+				if (radiodata == 'V1')
+				{
+					
+					if (sessiondata == 'PTS1')
+					{			
+						//startTag=""					
+						startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Date</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+						startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">10-10-2017</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Time</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">11 AM</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Fee</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">50 $</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Notes</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Good</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Status</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Available</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"		
+												
+						//alert(startTag);
+						//return true;
+					}
+					if (sessiondata == 'PTS2')
+					{
+						//startTag=""
+						startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Date</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+						startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">15-10-2017</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Time</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">12 AM</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Fee</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">70 $</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Notes</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Good</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Status</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Available</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"						
+						
+						//return true;
+					}
+					
+					if (sessiondata == 'PTS3')
+					{
+						//alert(sessiondata);
+						//startTag=""
+						startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Date</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+						startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">25-10-2017</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Time</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">10 AM</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Fee</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">65 $</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Notes</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Excellent</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Status</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Available</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"						
+						
+						//return true;
+					}
+					
+				}
+				else
+				{
+					//alert(sessiondata2);
+					if (sessiondata2 == 'GTS1')
+					{						
+						startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Date</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+						startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">10-09-2017</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Time</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">11:30 AM</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Fee</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">40 $</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Status</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Available</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Type</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Sport</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"							
+						
+					}
+					if (sessiondata2 == 'GTS2')
+					{
+						startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Date</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+						startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">09-09-2017</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Time</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">12:30 PM</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Fee</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">45 $</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Status</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Available</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Type</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Sport</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"							
+						
+					}
+					
+					if (sessiondata2 == 'GTS3')
+					{
+						startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Date</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+						startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">12-09-2017</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Time</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">01:30 PM</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Fee</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">55 $</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Status</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Available</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+						startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Type</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Sport</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"						
+						
+					}
+					
+				}
+				//alert(startTag);
+				if(startTag == "None")
+				{
+					//alert("There are no data available.");
+					startTag = "<TABLE id='mainTable'><TBODY><TR><TD style=\"COLOR: red;text-align:center\">There are no data available.</TD></tr></table>"
+				}
+				
+					endTag="</TBODY></TABLE>"
+					newTable=startTag;
+					newTable+=endTag;
+					
+					//alert(newTable);
+					if (radiodata == 'V1')
+					{
+						document.getElementById('tableDiv').innerHTML=newTable;
+					}
+					else
+					{
+						document.getElementById('tableDivGroup').innerHTML=newTable;
+					}
+				
+			}
+
+		</script>
+		
+  
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-inverse" id="cssmenu">
+			<div id="head-mobile"></div>
+			<div class="button"></div>
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a href="index.html"><img src="a1.png" alt="GET-FIT LOGO"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav navbar-right" style="display:block">
+					<li class="active"><a href="Userhome.html">Home</a></li>
+					<!-- <li><a href="#">TRAINING</a></li> -->
+					<li class="has-sub"><span class="submenu-button"></span><a href="#">TRAINING</a>
+					   <ul>
+						  <li><a href="TrainingRecord.html">RECORD NEW TRAINING</a></li>
+						  <li><a href="TrainingUpdate.html">UPDATE TRAINING</a></li>
+					   </ul>
+					</li>
+				 <li class="has-sub"><span class="submenu-button"></span><a href="#">TRAINING HISTORY</a>
+				   <ul>
+					  <li><a href="viewTrainingHisstory(Trainer).html">TRAINER</a></li>
+					  <li><a href="viewTrainingHistory(User).html">USER</a></li>
+				   </ul>
+				</li>
+					<li><a href="reviewTrainer.html">TRAINER REVIEW</a></li>
+					<li><form class="form-inline" style="padding-top:10px;">
+					   <input class="form-control" type="text" placeholder="Search">
+					   <button class="btn btn-outline-success" type="submit">GO</button>
+					 </form>
+					</li>
+					<li>
+						<div style="padding:10px 10px;">
+							<a class="btn btn-primary" type="button" href="index.html">SIGN OUT</a>
+						</div>
+					</li>
+					  <li> <div style="padding:10px 10px;"><a class="btn btn-primary" type="button" onclick="UserEdit.html" href="UserEdit.html">UPDATE</a> </div> </li>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+			</br>
+		  <div class="login-wrap">
+			<div class="login-html">
+			<form id="myForm" method="post">
+				<input id="tab-1" name="tab" class="personal-training" value="V1" checked="" type="radio"><label for="tab-1" class="tab">Personal Training Session</label>
+				<input id="tab-2" name="tab" class="group-training" value="V2" type="radio"><label for="tab-2" class="tab">Group Training Session</label>
+				<div class="login-form">
+					<div class="personal-training-htm">
+						<div class="group">
+							<label for="user" class="label">Session Id :</label>
+							<input id="psessionId" class="input" type="text">
+						</div>
+						
+						<div class="group">
+							<input id="find" class="button" value="Find" onclick="return createTable()" type="button">
+						</div>
+						
+						<div id="tableDiv" style="text-align:center">
+							
+						</div>						
+					</div>
+					<div class="group-training-htm">
+						<div class="group">
+							<label for="user" class="label">Session Id :</label>
+							<input id="gsessionId" class="input" type="text">
+						</div>
+						
+						<div class="group">
+							<input id="find" class="button" value="Find" onclick="return createTable()" type="button">
+						</div>
+						
+						<div id="tableDivGroup" style="text-align:center">
+							
+						</div>	
+					</div>
+				</div>
+				
+				</form>
+			</div>
+		</div>
+	
+
+
+</body></html>
