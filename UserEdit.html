@@ -1,0 +1,133 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Update User</title>
+	
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+	
+	<link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:600">
+	<link href="training.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">    
+	<link href="UserHome.css" rel="stylesheet" type="text/css">
+	
+  
+  <script type="text/javascript">
+			
+			function createTable() 
+			{
+			var newTable;
+			var startTag;
+			var endTag;
+			var sessiondata,radiodata;
+			
+			//alert(sessiondata);			
+			
+			//sessiondata = document.forms["myForm"]["psessionId"].value;
+			
+			startTag="None"
+			
+							
+			//startTag=""					
+			startTag="<TABLE id='mainTable'><TBODY><TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Full Name</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD>"
+			startTag+="<TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">User</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+			startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Password</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">****</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+			startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Email</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">mickeljanson007@gmail.com</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"
+			startTag+="<TR><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Entry Lavel</TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\"> : </TD><TD style=\"WIDTH: 120px;COLOR: red;font-style:bold\">Advanced</TD><TD style=\"WIDTH: 150px\"><input class='button' value='Edit' type='button'></TD></TR>"					
+									
+				
+				//alert(startTag);
+				if(startTag == "None")
+				{
+					//alert("There are no data available.");
+					startTag = "<TABLE id='mainTable'><TBODY><TR><TD style=\"COLOR: red;text-align:center\">There are no data available.</TD></tr></table>"
+				}
+				
+				endTag="</TBODY></TABLE>"
+				newTable=startTag;
+				newTable+=endTag;
+				
+				
+				document.getElementById('tableDiv').innerHTML=newTable;
+					
+				
+			}
+
+		</script>
+		
+  
+</head>
+
+<body onload="createTable()">
+	<header>
+		<nav class="navbar navbar-inverse" id="cssmenu">
+			<div id="head-mobile"></div>
+			<div class="button"></div>
+			  <div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a href="index.html"><img src="a1.png" alt="GET-FIT LOGO"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+				  <ul class="nav navbar-nav navbar-right" style="display:block">
+					<li class="active"><a href="UserHome.html">Home</a></li>
+					<!-- <li><a href="#">TRAINING</a></li> -->
+					<li class="has-sub"><span class="submenu-button"></span><a href="#">TRAINING</a>
+					   <ul>
+						  <li><a href="TrainingRecord.html">RECORD NEW TRAINING</a></li>
+						  <li><a href="TrainingUpdate.html">UPDATE TRAINING</a></li>
+					   </ul>
+					</li>
+				    <li class="has-sub"><span class="submenu-button"></span><a href="#">TRAINING HISTORY</a>
+				   <ul>
+					  <li><a href="viewTrainingHisstory(Trainer).html">TRAINER</a></li>
+					  <li><a href="viewTrainingHistory(User).html">USER</a></li>
+				   </ul>
+				</li>
+					<li><a href="reviewTrainer.html">TRAINER REVIEW</a></li>
+					<li><form class="form-inline" style="padding-top:10px;">
+					   <input class="form-control" type="text" placeholder="Search">
+					   <button class="btn btn-outline-success" type="submit">GO</button>
+					 </form>
+					</li>
+					<li>
+						<div style="padding:10px 10px;">
+							<a class="btn btn-primary" type="button" href="index.html">SIGN OUT</a>
+						</div>
+				  </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<br>
+		  <div class="login-wrap">
+			<div class="login-html">
+			<form id="myForm" method="post">				
+				<div class="login-form">
+				
+					<p align="left"><u><font size="6px">Update User</font></u></p>					
+					<br>
+						<p align="center"><img src="user.jpg" id = "pic" width="200px" height="200px"></p>
+						
+						<div id="tableDiv" style="text-align:center">
+										
+				</div>
+				<br>
+				<div class="button" style="padding:10px 10px;">
+					<a class="btn btn-primary" type="button" all href="Userhome.html"> UPDATE</a>
+				</div>
+
+			</div>
+				</form>
+		</div>
+	
+
+
+</body></html>
