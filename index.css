@@ -1,0 +1,49 @@
+.navbar-header img{height:70px;
+                  width:90px;}
+.carousel-inner{
+        height: 450px;
+      }
+.carousel-inner img{
+  height: 100%;
+  width: 100%;
+}
+.navbar-inverse .navbar-brand img{
+          position: absolute;
+          top:0px;
+          height:89px;
+          width: 90px;
+}
+.navbar{
+        margin-bottom:0px;
+        border-radius:0;
+        background-color:#162128 ;
+        padding: 10px 15px 30px;
+        font-size: 1.2em;
+        border: 0;}
+footer{margin-bottom:0px;
+border-radius:0;
+background-color:#162128;
+color:grey;
+padding: 10px 15px 30px;
+font-size: 1.2em;
+border: 0;}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,{}
+
+}
+.btn{
+  font-size: 18px;
+  color:white;
+  padding: 12px 22px;
+  background-color:yellow;
+  border:2px solid;
+}
+.carousel-caption{
+  top:50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;}
+
+#middleimg img{width:300px; height: 170px;}
+#middleimg h4{padding-top: 10px;
+        color:#CACFD2;}
+#reviewdata{color:#D0D3D4;}
