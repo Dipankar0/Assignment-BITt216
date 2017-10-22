@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet" type="text/css">
+
+  <style>
+  input{
+    color:black;
+  }
+#dateb{
+  display: none;
+}
+#feesb{
+  display: none;
+}
+#timeb{
+  display: none;
+}
+#statusb{
+  display: none;
+}
+</style>
+
+
+<title>Update Training Record</title>
+<script src="script.js">
+
+</script>
+</head>
+<body style="background-color:#273746;">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html"><img src="a1.png" alt="GET-FIT LOGO"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" style="display:block">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">TRAINING</a></li>
+        <li><a href="#">GROUP FITNESS</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </li>
+      <li><form class="form-inline" style="padding-top:10px;"
+        name="myForm" action="/action_page_post.php"
+        onsubmit="return validateForm()" method="post">
+         <input class="form-control"  type="text" name="fname" placeholder="Search">
+           <button class="btn btn-outline-success" type="submit">GO</button>
+         </form></li>
+         <li><div style="padding:10px 10px;">
+     <button class="btn btn-primary" type="button" style="background-color:#DB4134;">LOGOUT</button>
+   </div>
+   </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container-fluid" style="height:600px; color:#CACFD2;">
+    <div class="col-sm-offset-4 col-sm-8">
+      <div class="row col-sm-0ffset-0">
+      <h4>Sesson ID: A0088</h4>
+      <h4>Title: Army Fitness</h4>
+      <h4>Type: Group</h4>
+      <div id="feesa"><h4><label>Fees: 50 RM</label></div>
+      <div id="feesb"><h4>FEES: <input type="number" name="fees" style="margin:7px 0px;" placeholder="Amount"> RM</h4></div>
+    <h4> <button class="feesbutton" style="background-color:gray; border:0; " onclick="showHidefees();">Edit</button></h4>
+</h4>
+    </div>
+     <div class="row">
+    <div class="form-group col-sm-0ffset-0">
+      <div id="datea"><h4>Date: 11 December 2017</h4></div>
+    <div  id="dateb" style="color:black;"><h5><span style="color:#F0F3F4;">Date:</span>
+        <select name="DOB_date">
+            <option>DD</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option>
+            <option>9</option><option>10</option><option>11</option><option>12</option>
+            <option>13</option><option>14</option><option>15</option>
+            <option>16</option><option>17</option><option>18</option><option>19</option>
+            <option>20</option><option>21</option><option>22</option><option>23</option>
+            <option>24</option><option>25</option><option>26</option><option>27</option>
+            <option>28</option><option>29</option><option>30</option><option>31</option>
+        </select>
+        <select name="DOB_month">
+            <option>MM</option><option>January</option><option>February</option>
+            <option>March</option><option>April</option>
+            <option>May</option><option>June</option><option>July</option>
+            <option>August</option><option>September</option>
+            <option>October</option><option>November</option>
+            <option>December</option>
+        </select>
+        <select name="DOB_year">
+            <option>YY</option><option>1980</option><option>1981</option>
+            <option>1982</option><option>1983</option>
+            <option>1984</option><option>1985</option><option>1986</option
+            <option>1987</option><option>1988</option>
+            <option>1989</option><option>1990</option><option>1991</option
+            <option>1992</option><option>1993</option>
+            <option>1994</option><option>1995</option><option>1996</option
+            <option>1997</option><option>1998</option><option>1999</option
+            <option>2000</option><option>2001</option><option>2002</option
+            <option>2003</option><option>2004</option><option>2005</option>
+        </select>
+      </h5>
+    </div>
+    <h4><button class="feesbutton" style="background-color:gray; border:0; " onclick="showHidedates();">Edit</button></h4>
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-sm-0ffset-0">
+<div id="timea"><h4>Time: 11.00 AM</h4></div>
+<div id="timeb" style="color:black;"><h5><span style="color:#F0F3F4;">Time:</span>
+        <select name="Time">
+            <option>00.00 AM</option><option>00.30 AM</option><option>01.00 AM</option><option>01.30 AM</option>
+            <option>02.00 AM</option><option>02.30 AM</option><option>03.00 AM</option><option>03.30 AM</option>
+            <option>04.00 AM</option><option>04.30 AM</option><option>05.00 AM</option><option>05.30 AM</option>
+            <option>06.00 AM</option><option>06.30 AM</option><option>07.00 AM</option><option>07.30 AM</option>
+            <option>08.00 AM</option><option>08.30 AM</option><option>09.00 AM</option><option>09.30 AM</option>
+            <option>10.00 AM</option><option>10.30 AM</option><option>11.00 AM</option><option>11.30 AM</option>
+            <option>12.00 PM</option><option>00.30 PM</option><option>01.00 PM</option><option>01.30 PM</option>
+            <option>02.00 PM</option><option>02.30 PM</option><option>03.00 PM</option><option>03.30 PM</option>
+            <option>04.00 PM</option><option>04.30 PM</option><option>05.00 PM</option><option>05.30 PM</option>
+            <option>06.00 PM</option><option>06.30 PM</option><option>07.00 PM</option><option>07.30 PM</option>
+            <option>08.00 PM</option><option>08.30 PM</option><option>09.00 PM</option><option>09.30 PM</option>
+            <option>10.00 PM</option><option>10.30 PM</option><option>11.00 PM</option><option>11.30 PM</option>
+        </select>
+      </h5>
+    </div>
+    <h4><button class="feesbutton" style="background-color:gray; border:0; " onclick="showHidetime();">Edit</button></h4>
+  </div>
+</div>
+<div class="row">
+  <div id="statusa"><h4>Status: Available</h4></div>
+  <div id="statusb" style="color:black;"><h5><span style="color:#F0F3F4;">Status:</span>
+ <select class="select" id="select" name="select">
+  <option value="Available">
+   Available
+  </option>
+  <option value="Complete">
+   Complete
+  </option>
+  <option value="Cancelled">
+   Cancelled
+  </option>
+</select>
+</h5>
+</div>
+<h4><button class="feesbutton" style="background-color:gray; border:0; " onclick="showHidestatus();">Edit</button></h4>
+</div>
+<div class="row" style="padding:0 0;">
+  <div class=" col-sm-0ffset-0">
+    <h4>Note</h4>
+            <form>
+              <h5><textarea placeholder="Start Here" ></textarea></h5>
+              <button type="submit" class="btn btn-success green" onclick="fnsubmit();"><i class="fa fa-share"></i> Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+<footer class="container-fluid" style="background-color:#162128;">
+  <div class="row">
+    <div class="col-sm-5">
+      <h3>Our Address<h3>
+        <h5>07-15, Block E, Pasific Place, Selangor, Malaysia.</h5>
+  </div>
+  <div class="col-sm-3" style=" padding-top:12px;">
+    <img src="a1.png" style="height:100px; width:110px;" alt="GET-FIT LOGO">
+  </div>
+  <div class="col-sm-4">
+    <h3>Contact</h3>
+    <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
+      <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><span class="fa fa-facebook"></span></a>
+        <a class="btn btn-social-icon btn-linkedin" href="http://linkedin.com/"><span class="fa fa-linkedin"></span></a>
+          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
+            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><span class="fa fa-youtube"></span></a>
+
+  </div>
+  <div class="col-xs-12">
+    <p style="padding:10px;"></p>
+    <p align="center">© Copyright 2017 GET-FIT Fitness / All Rights Reserved</p>
+  </div>
+</div>
+
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
